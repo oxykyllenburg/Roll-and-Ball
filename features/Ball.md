@@ -10,6 +10,7 @@
 
 ## Ball movement
 
+To make the ball according to player's input,
 
 	local moveDir = humanoid.MoveDirection
 	moveDir = Vector3.new(moveDir.Z, 0, -moveDir.X)

@@ -20,5 +20,15 @@ Then, we manipulate the value for each axis
 
 	moveDir = Vector3.new(moveDir.Z, 0, -moveDir.X)
 	
+*my case
+<br>
+
+Multiply the move direction and apply it to our ball
+
 	ball:ApplyAngularImpulse(moveDir * force)
+
+<br>
+
+(Optional) add some resistor so it will slow down fast
+
 	ball:ApplyAngularImpulse(-ball.AssemblyAngularVelocity / 2)

@@ -4,6 +4,6 @@
 
 
 ## Features:
-- [Ball](features/Ball.md)
+- [Ball](features/ball.md)
 - [Cinematic Aspect Ratio](features/cinematic-aspect-ratio.md)
 -

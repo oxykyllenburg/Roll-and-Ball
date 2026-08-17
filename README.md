@@ -4,5 +4,5 @@
 
 
 ## Features:
-- [Ball Movement](features/Ball.md)
+- [Ball](features/Ball.md)
 - 

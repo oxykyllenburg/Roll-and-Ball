@@ -1,6 +1,6 @@
 # Ball
 
-<img src="../images/quest-ui.png" width="600">
+<img src="../images/ball.png" width="600">
 
 - ## Making the ball to be player's default character
 

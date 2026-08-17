@@ -5,7 +5,7 @@
 
 ## Setting up the ball
 
-<img src="../images/ball.png">
+<img src="../images/ball-setup.png">
 
 
 

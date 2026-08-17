@@ -5,6 +5,10 @@
 
 ## Setting up the ball
 
+<img src="../images/ball.png">
+
+
+
 	local moveDir = humanoid.MoveDirection
 	moveDir = Vector3.new(moveDir.Z, 0, -moveDir.X)
 	

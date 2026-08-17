@@ -1,3 +1,3 @@
 # Ball
 
-## Making the ball to be player's default character
+- ## Making the ball to be player's default character

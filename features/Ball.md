@@ -10,9 +10,12 @@
 
 ## Ball movement
 
-To make the ball according to player's input,
+To make the ball moving according to player's input, we need to get the humanoid's move direction
 
 	local moveDir = humanoid.MoveDirection
+
+Then, we manipulate the value for each axis
+
 	moveDir = Vector3.new(moveDir.Z, 0, -moveDir.X)
 	
 	ball:ApplyAngularImpulse(moveDir * force)

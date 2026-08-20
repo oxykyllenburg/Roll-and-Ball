@@ -1,9 +1,9 @@
 # Ball
 
 ## Overview
-Custom character for each player and give it physics based movement that controlled by default player movement input
 <img src="./images/ball.png" width="200">
-<br><br>
+Custom character for each player and give it physics based movement that controlled by default player movement input
+<br>
 
 ## Architecture
 

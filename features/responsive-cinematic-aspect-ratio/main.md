@@ -10,6 +10,7 @@ A dynamic aspect-ratio system designed to preserve custom composition across dif
 <img src="./images/setup-1.png">  <img src="./images/setup-2.png">
 <br><br>
 
+
 ## Implementation
 
 ### Calculating each bar height depends on the screen height

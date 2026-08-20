@@ -1,4 +1,4 @@
-# -- Responsive Cinematic Aspect Ratio --
+# Responsive Cinematic Aspect Ratio
 <img src="./images/cinematic-aspect-ratio.png" width="400">
 <br><br>
 
@@ -6,9 +6,9 @@
 <img src="./images/setup-1.png">  <img src="./images/setup-2.png">
 <br><br>
 
-## How do i approach this
+## Implementation
 
-Calculating each bar height depends on the screen height
+### Calculating each bar height depends on the screen height
 ```lua
 local screenSize = screenGui.AbsoluteSize
 local gameplayHeight = screenSize.X / screenGui:GetAttribute("AspectRatio")
@@ -16,7 +16,7 @@ local barHeight = (screenSize.Y - gameplayHeight) / 2
 ```
 <br>
 
-Apply the result to each bar
+### Apply the result to each bar
 ```lua
 barTop.Size = UDim2.new(1, 0, 0 barHeight)
 barBottom.Size = UDim2.new(1, 0, 0, barHeight)

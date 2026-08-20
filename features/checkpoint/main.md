@@ -1,7 +1,7 @@
 # Checkpoint
 
 ## Overview
-<img src="./images/checkpoint.png" width=300> <img src="./images/checkpoint2.png"> <br>
+<img src="./images/checkpoint.png" width=300>
 Basically a checkpoint system
 <br><br>
 
@@ -10,3 +10,22 @@ Basically a checkpoint system
 <br><br>
 
 ## Implementation
+<img src="./images/checkpoint2.png">
+
+To show current player's checkpoint, setting up the leaderstat is mandatory
+```lua
+local Players = game:GetService("Players")
+
+Players.PlayerAdded:Connect(function(player)
+
+    local leaderstats = Instance.new("Folder")
+    leaderstats.Name = "leaderstats"
+    leaderstats.Parent = player
+
+    local checkpoint = Instance.new("IntValue")
+    checkpoint.Name = "Checkpoint"
+    checkpoint.Value = 0
+    checkpoint.Parent = leaderstats
+    
+end
+```

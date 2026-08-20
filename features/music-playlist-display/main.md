@@ -9,6 +9,6 @@ A music playlist player for each world/biome, with a title and artist name visib
 <img src="./images/arch1.png"> <img src="./images/arch2.png">
 <br><br>
 
-## Configure the playlist
+## Configure biome's playlist
 <img src="images/">
 <br><br>

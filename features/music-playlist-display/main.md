@@ -10,7 +10,7 @@ A music playlist player for each world/biome, with a title and artist name visib
 <br><br>
 
 ## Playlist Configuration
-Inside the module ("GetPlaylist"), the playlist stored in a dictionary
+Playlists are stored in a dictionary inside the module ('GetPlaylist')
 ```lua
 local list = {
   ["Biome1"] = "Happy song", "Happy song2",
@@ -27,3 +27,4 @@ end
 ```
 <br><br>
 
+## 

@@ -12,7 +12,7 @@ Basically a checkpoint system
 ## Implementation
 <img src="./images/checkpoint2.png">
 
-To show current player's checkpoint, setting up the leaderstat is mandatory
+To show current player's checkpoint, setting up the leaderstats is mandatory
 ```lua
 local Players = game:GetService("Players")
 

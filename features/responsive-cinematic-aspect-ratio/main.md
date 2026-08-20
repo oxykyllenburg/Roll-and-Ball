@@ -7,3 +7,8 @@
 <br><br>
 
 ## Making it responsive
+Adjust the bar size according to current screen size
+
+`local screenSize = screenGui.AbsoluteSize
+local gameplayHeight = screenSize.X / screenGui:GetAttribute("AspectRatio")
+local barSize = (screenSize.Y - gameplayHeight) / 2`

@@ -2,7 +2,7 @@
 
 ## Overview
 <img src="./images/music-title-display.png" width=400>
-A music playlist player for each world/biome, with a title and artist name displayer
+A music playlist player for each world/biome, with a title and artist name visible
 <br><br>
 
 ## Architecture

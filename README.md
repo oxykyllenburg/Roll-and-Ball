@@ -5,5 +5,5 @@
 
 ## Features:
 - [Ball](features/ball.md)
-- [Cinematic Aspect Ratio](features/cinematic-aspect-ratio.md)
+- [Responsive Cinematic Aspect Ratio](features/cinematic-aspect-ratio.md)
 -

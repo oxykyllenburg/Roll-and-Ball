@@ -31,3 +31,6 @@ Players.PlayerAdded:Connect(function(player)
     
 end
 ```
+<br>
+
+### Checkpoint system

@@ -1,6 +1,10 @@
-# Responsive Cinematic Aspect Ratio
+# Responsive Aspect-Ratio
+
+## Overview
+A dynamic aspect-ratio system designed to preserve custom composition across different resolutions.
 <img src="./images/cinematic-aspect-ratio.png" width="400">
 <br><br>
+
 
 ## Architecture
 <img src="./images/setup-1.png">  <img src="./images/setup-2.png">
@@ -65,11 +69,5 @@ end
 ---
 
 updateAspectRatio()
-screenGui:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
-	
-	local barYSize = getBarYSize()
-	top.Size = UDim2.new(1, 0, 0, barYSize)
-	bottom.Size = UDim2.new(1, 0, 0, barYSize)
-	
-end)
+screenGui:GetPropertyChangedSignal("AbsoluteSize"):Connect(updateAspectRatio)
 ```

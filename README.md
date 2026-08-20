@@ -6,4 +6,5 @@
 ## Features:
 - [Ball](features/ball/main.md)
 - [Responsive Cinematic Aspect Ratio](features/responsive-cinematic-aspect-ratio/main.md)
+- [Music Player](features/background-music/main.md)
 -

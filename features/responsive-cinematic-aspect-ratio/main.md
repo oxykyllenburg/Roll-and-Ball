@@ -3,4 +3,4 @@
 <br><br>
 
 ## Setting up
-<img src="./images/setup-1.png">    <img src="./images/setup-2.png">
+<img src="./images/setup-1.png">  <img src="./images/setup-2.png">

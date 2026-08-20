@@ -18,14 +18,12 @@ local screenSize = screenGui.AbsoluteSize
 local gameplayHeight = screenSize.X / screenGui:GetAttribute("AspectRatio")
 local barHeight = (screenSize.Y - gameplayHeight) / 2
 ```
-<br>
 
 ### Apply the result to each bar
 ```lua
 barTop.Size = UDim2.new(1, 0, 0 barHeight)
 barBottom.Size = UDim2.new(1, 0, 0, barHeight)
 ```
-<br>
 
 ### Making it responsive
 ```lua
@@ -40,7 +38,7 @@ screenGui:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
 
 end)
 ```
-<br><br>
+<br>
 
 ## Usage
 ```lua

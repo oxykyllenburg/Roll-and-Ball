@@ -1,8 +1,8 @@
 # Responsive Aspect-Ratio
 
 ## Overview
-A dynamic aspect-ratio system designed to preserve custom composition across different screen resolutions
 <img src="./images/cinematic-aspect-ratio.png" width="400">
+A dynamic aspect-ratio system designed to preserve custom composition across different screen resolutions
 <br><br>
 
 

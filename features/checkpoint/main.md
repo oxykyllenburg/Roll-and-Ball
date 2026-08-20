@@ -10,6 +10,8 @@ Basically a checkpoint system
 <br><br>
 
 ## Implementation
+
+### Player leaderstats
 <img src="./images/checkpoint2.png">
 
 To show current player's checkpoint, setting up the leaderstats is mandatory

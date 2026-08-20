@@ -4,6 +4,6 @@
 
 
 ## Features:
-- [Ball](features/ball.md)
+- [Ball](features/ball/main.md)
 - [Responsive Cinematic Aspect Ratio](features/cinematic-aspect-ratio.md)
 -

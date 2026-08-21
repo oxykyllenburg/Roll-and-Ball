@@ -13,6 +13,7 @@ Basically a checkpoint system
 
 ## Implementation
 <br>
+
 ### Player leaderstats
 <img src="./images/checkpoint2.png">
 

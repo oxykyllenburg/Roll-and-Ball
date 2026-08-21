@@ -16,21 +16,17 @@ Basically a checkpoint system
 
 To show current player's checkpoint, setting up the leaderstats is mandatory
 ```lua
-local Players = game:GetService("Players")
+local leaderstats = Instance.new("Folder")
+leaderstats.Name = "leaderstats"
+leaderstats.Parent = player
 
-Players.PlayerAdded:Connect(function(player)
-
-    local leaderstats = Instance.new("Folder")
-    leaderstats.Name = "leaderstats"
-    leaderstats.Parent = player
-
-    local checkpoint = Instance.new("IntValue")
-    checkpoint.Name = "Checkpoint"
-    checkpoint.Value = 0
-    checkpoint.Parent = leaderstats
-    
-end
+local checkpoint = Instance.new("IntValue")
+checkpoint.Name = "Checkpoint"
+checkpoint.Value = 0
+checkpoint.Parent = leaderstats
 ```
 <br>
 
 ### Checkpoint system
+
+

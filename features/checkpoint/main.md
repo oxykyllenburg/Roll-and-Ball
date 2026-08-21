@@ -28,7 +28,7 @@ checkpoint.Name = "Checkpoint"
 checkpoint.Value = 0
 checkpoint.Parent = leaderstats
 ```
-<br>
+<br><br>
 
 ### Check and update player's checkpoint when a checkpoint touched
 ```lua
@@ -48,7 +48,7 @@ playerCheckpoint.Changed:Connect(function(position)
 
 end)
 ```
-<br> --- <br><br>
+--- <br><br>
 
 ## Usage
 <br>

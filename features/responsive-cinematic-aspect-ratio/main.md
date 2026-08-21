@@ -3,12 +3,12 @@
 ## Overview
 <img src="./images/cinematic-aspect-ratio.png" width="400">
 A dynamic aspect-ratio system designed to preserve custom composition across different screen resolutions
---- <br><br>
+<br> --- <br><br>
 
 
 ## Architecture
 <img src="./images/setup-1.png">  <img src="./images/setup-2.png">
---- <br><br>
+<br> --- <br><br>
 
 
 ## Implementation

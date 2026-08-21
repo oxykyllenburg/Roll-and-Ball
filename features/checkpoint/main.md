@@ -57,6 +57,8 @@ end)
 ```lua
 local Players = game:GetService("Players")
 
+local checkpointFolder = workspace:FindFirstChild("CheckpointFolder")
+
 Players.PlayerAdded:Connect(function(player)
 
     local leaderstats = Instance.new("Folder")
@@ -67,6 +69,13 @@ Players.PlayerAdded:Connect(function(player)
     checkpoint.Name = "Checkpoint"
     checkpoint.Value = 0 --or saved player's checkpoint data value
     checkpoint.Parent = player
+
+    checkpoint.Changed:Connect(function(position)
+
+        local exist = checkpointFolder:FindFirstChild(tostring(position))
+        if exist then player.RespawnLocation = exist end
+
+    end)
 
 end)
 ```

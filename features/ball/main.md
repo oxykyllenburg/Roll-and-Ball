@@ -1,23 +1,23 @@
 # Ball
 
-## Overview
+### Overview
 <img src="./images/ball.png" width="200">
 Custom character for each player and give it physics based movement that controlled by default player movement input
 <br><br>
 
-## Architecture
+### Architecture
 
 <img src="./images/ball-setup.png">
 <br><br>
 
-## Ball movement
+### Ball movement
 
-### To make the ball moving according to player's input, we need to get the humanoid's move direction
+To make the ball moving according to player's input, we need to get the humanoid's move direction
 ```lua
 local moveDir = humanoid.MoveDirection
 ```
 
-### Manipulate the value for each axis
+Manipulate the value for each axis
 ```lua
 moveDir = Vector3.new(moveDir.Z, 0, -moveDir.X) --my case
 ```
@@ -27,13 +27,13 @@ moveDir = Vector3.new(moveDir.Z, 0, -moveDir.X) --my case
 ball:ApplyAngularImpulse(moveDir * force)
 ```
 
-### (Optional) add some resistor so it will slow down fast
+(Optional) add some resistor so it will slow down fast
 ```lua
 ball:ApplyAngularImpulse(-ball.AssemblyAngularVelocity / 2)
 ```
 <br>
 
-## Usage
+### Usage
 ```lua
 local runService = game:GetService("RunService")
 local replicatedStorage = game:GetService("ReplicatedStorage")

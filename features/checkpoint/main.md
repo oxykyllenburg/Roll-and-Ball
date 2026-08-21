@@ -30,6 +30,33 @@ checkpoint.Parent = leaderstats
 ```
 <br>
 
-### Checkpoint system
+### Check and update player's checkpoint when a checkpoint touched
+```lua
+local playerCheckpoint = leaderstats:FindFirstChild("Checkpoint")
+if playerCheckpoint.Value ~= touchedCheckpointPosition - 1 then return end
+playerCheckpoint.Value = touchedCheckpointPosition
+```
+Ensure that players pass through the correct checkpoints in the correct order
+<br> --- <br><br>
 
 
+## Usage
+<br>
+
+### OnPlayerAdded
+```lua
+local Players = game:GetService("Players")
+
+Players.PlayerAdded:Connect(function(player)
+
+    local leaderstats = Instance.new("Folder")
+    leaderstats.Name = "leaderstats"
+    leaderstats.Parent = player
+
+    local checkpoint = Instance.new("IntValue")
+    checkpoint.Name = "Checkpoint"
+    checkpoint.Value = 0 --or saved player's checkpoint data value
+    checkpoint.Parent = player
+
+end)
+```

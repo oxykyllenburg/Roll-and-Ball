@@ -1,7 +1,7 @@
 # Ball
 <br>
 
-## Overview
+### Overview
 <img src="./images/ball.png" width="200">
 Custom character for each player and give it physics based movement that controlled by default player movement input
 <br><br>
@@ -23,7 +23,7 @@ Manipulate the value for each axis
 moveDir = Vector3.new(moveDir.Z, 0, -moveDir.X) --my case
 ```
 
-### Multiply the move direction and apply it to our ball
+Multiply the move direction and apply it to our ball
 ```lua
 ball:ApplyAngularImpulse(moveDir * force)
 ```

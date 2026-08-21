@@ -60,3 +60,33 @@ Players.PlayerAdded:Connect(function(player)
 
 end)
 ```
+<br>
+
+### Checkpoint Server Check
+Loop through every single checkpoint to verify and update player's checkpoint
+```lua
+local Players = game:GetService("Players")
+
+local checkpointFolder = workspace:FindFirstChild("CheckpointFolder")
+
+for _, checkpoint in checkpointFolder:GetChildren() do
+
+    local checkpointPosition = tonumber(checkpoint.Name)
+    checkpoint.Touched:Connect(function(other)
+
+        if other.Name ~= "Head" then return end
+        local player = Players:GetPlayerFromCharacter(other.Parent)
+        if not player then return end
+
+        local leaderstats = player:FindFirstChild("leaderstats")
+        if not leaderstats then return end
+
+        local playerCheckpoint = leaderstats:FindFirstChild("Checkpoint")
+        if not playerCheckpoint or playerCheckpoint.Value ~= checkpointPosition - 1 then return end
+
+        playerCheckpoint.Value = checkpointPosition
+        
+    end)
+
+end
+```

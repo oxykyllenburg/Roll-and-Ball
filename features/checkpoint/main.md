@@ -26,9 +26,8 @@ checkpoint.Name = "Checkpoint"
 checkpoint.Value = 0
 checkpoint.Parent = leaderstats
 ```
----
 <br>
 
-#### Checkpoint system
+### Checkpoint system
 
 

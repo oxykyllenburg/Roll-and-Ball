@@ -1,5 +1,6 @@
 # Checkpoint
 <br>
+---
 
 ### Overview
 <img src="./images/checkpoint.png" width=300>

@@ -28,7 +28,7 @@ checkpoint.Name = "Checkpoint"
 checkpoint.Value = 0
 checkpoint.Parent = leaderstats
 ```
-<br><br>
+<br>
 
 ### Check and update player's checkpoint when a checkpoint touched
 ```lua
@@ -37,7 +37,7 @@ if playerCheckpoint.Value ~= touchedCheckpointPosition - 1 then return end
 playerCheckpoint.Value = touchedCheckpointPosition
 ```
 Ensure that players pass through the correct checkpoints in the correct order
-<br><br><br>
+<br><br>
 
 ### Set player's respawn location to checkpoint's position
 ```lua

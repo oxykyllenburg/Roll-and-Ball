@@ -62,7 +62,7 @@ end)
 ```
 <br>
 
-### Checkpoint Server Check
+### Checkpoint ServerScript
 Loop through every single checkpoint to verify and update player's checkpoint
 ```lua
 local Players = game:GetService("Players")

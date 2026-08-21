@@ -1,14 +1,14 @@
-# Responsive Aspect-Ratio
+# - Responsive Aspect-Ratio
 
 ## Overview
 <img src="./images/cinematic-aspect-ratio.png" width="400">
 A dynamic aspect-ratio system designed to preserve custom composition across different screen resolutions
-<br><br>
+--- <br><br>
 
 
 ## Architecture
 <img src="./images/setup-1.png">  <img src="./images/setup-2.png">
-<br><br>
+--- <br><br>
 
 
 ## Implementation
@@ -19,12 +19,14 @@ local screenSize = screenGui.AbsoluteSize
 local gameplayHeight = screenSize.X / screenGui:GetAttribute("AspectRatio")
 local barHeight = (screenSize.Y - gameplayHeight) / 2
 ```
+<br>
 
 ### Apply the result to each bar
 ```lua
 barTop.Size = UDim2.new(1, 0, 0 barHeight)
 barBottom.Size = UDim2.new(1, 0, 0, barHeight)
 ```
+<br>
 
 ### Making it responsive
 ```lua
@@ -39,7 +41,7 @@ screenGui:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
 
 end)
 ```
-<br>
+--- <br><br>
 
 ## Usage
 ```lua

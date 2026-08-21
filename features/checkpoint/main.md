@@ -4,8 +4,7 @@
 ## Overview
 <img src="./images/checkpoint.png" width=300>
 Basically a checkpoint system
----
-<br><br>
+<br> --- <br>
 
 ## Architecture
 <img src="./images/checkpoint-arch1.png" width=200>

@@ -37,8 +37,18 @@ if playerCheckpoint.Value ~= touchedCheckpointPosition - 1 then return end
 playerCheckpoint.Value = touchedCheckpointPosition
 ```
 Ensure that players pass through the correct checkpoints in the correct order
-<br> --- <br><br>
+<br>
 
+### Set player's respawn location to checkpoint's position
+```lua
+playerCheckpoint.Changed:Connect(function(position)
+
+    local checkpoint = checkpointFolder:FindFirstChild(tostring(position))
+    if checkpoint then player.RespawnLocation = checkpoint end
+
+end)
+```
+<br> --- <br><br>
 
 ## Usage
 <br>

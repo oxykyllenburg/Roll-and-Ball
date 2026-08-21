@@ -1,13 +1,12 @@
-# Ball
+# - Ball
 <br>
 
-### Overview
+## Overview
 <img src="./images/ball.png" width="200">
 Custom character for each player and give it physics based movement that controlled by default player movement input
-<br><br>
+--- <br><br>
 
-### Architecture
-
+## Architecture
 <img src="./images/ball-setup.png">
 <br><br>
 

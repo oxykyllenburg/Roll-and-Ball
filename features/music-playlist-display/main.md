@@ -28,7 +28,28 @@ end
 <br>
 
 ## Music player
+Set a few empty variables
+```lua
+local thread
+local currentSong
+local previousBiome
+```
+<br>
+
 Check the current biome every time the player spawn/respawn
 ```lua
+local leaderstats = player:WaitForChild("leaderstats")
+local checkpoint = leaderstats:WaitForChild("Checkpoint")
 
+local biome = GetBiomeName(checkpoint.Value)
+if biome == previousBiome then return end
+```
+If it's the same biome as before, do nothing
+<br>
+
+If current biome is different, change to new playlist
+```lua
+local list = GetPlaylist(biome)
+thread = coroutine.create(playlist)
+coroutine.resume(thread, list)
 ```

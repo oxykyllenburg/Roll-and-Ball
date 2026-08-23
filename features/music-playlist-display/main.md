@@ -28,6 +28,7 @@ end
 <br>
 
 ## Music player
+Check the current biome every time the player spawn/respawn
 ```lua
 
 ```

@@ -1,2 +1,2 @@
 ## Loading Screen
-![Loading Screen](./media/loading-screen.gif)
+![Loading Screen](./media/loading-screen.mp4)

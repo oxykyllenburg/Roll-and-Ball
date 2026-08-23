@@ -45,11 +45,29 @@ local biome = GetBiomeName(checkpoint.Value)
 if biome == previousBiome then return end
 ```
 If it's the same biome as before, do nothing
-<br>
+<br><br>
 
-If current biome is different, change to new playlist
+However if current biome is different, change to new playlist
 ```lua
 local list = GetPlaylist(biome)
-thread = coroutine.create(playlist)
+thread = coroutine.create(function(list)
+
+    while true do
+
+        for _, name in list do
+
+            local song = musicsFolder:FindFirstChild(name)
+            if not song then task.wait(3) continue end
+
+            currentSong = song
+            song:Play()
+            title.Text = song.Name
+            artist.Text = "by " .. song:GetAttribute("Artist"
+
+        end
+
+    end
+
+end)
 coroutine.resume(thread, list)
 ```

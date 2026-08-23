@@ -1,2 +1,2 @@
 ## Loading Screen
-<img src="./media/loading-screen.gif" width=300>
+<img src="./media/loading-screen.gif" width="300">

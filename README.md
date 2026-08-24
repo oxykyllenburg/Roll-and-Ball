@@ -8,4 +8,4 @@
 - [Checkpoint](features/checkpoint/main.md)
 - [Responsive Cinematic Aspect Ratio](features/responsive-cinematic-aspect-ratio/main.md)
 - [Music Playlist Display](features/music-playlist-display/main.md)
-- [Loading Screen](features/loading-screen/main.md)
+- [Loading Screen](features/loading-screen.md)
